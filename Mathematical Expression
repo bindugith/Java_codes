@@ -1,0 +1,141 @@
+The expression will be one of the following expressions:
+
+A + B = C, A - B = C and A * B = C.
+
+where A, B, C are three numbers, S is the sign between A and B, and Q is the '=' sign.
+
+If the expression is right print "Yes", Otherwise print the right answer of the expression.
+
+Input Format
+
+The first line contains the number of test cases t.
+
+The following lines contain t test cases. One test case per line.
+
+Each test case is in the format A S B Q C, where A,B and C are the numbers, S is the sign between A and B and Q is the '=' sign.
+
+Constraints
+
+1<= T <= 105
+
+0<= A,B <= 102
+
+-105 <= C <=105
+
+Output Format
+
+Print the result of each test case in a new line.
+
+In each test case, If the expression is right print "Yes", Otherwise print the right answer of the expression.
+
+Sample Input 0
+
+2
+5 + 10 = 15
+2 * 10 = 19
+Sample Output 0
+
+Yes
+20
+Submissions: 201
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int n=s.nextInt();
+10
+        int i=1;
+11
+        while(i<=n){
+12
+            int a=s.nextInt();
+13
+            char ch=s.next().charAt(0);
+14
+            int b=s.nextInt();
+15
+            char q=s.next().charAt(0);
+16
+            int c=s.nextInt();
+17
+            if(ch=='+'){
+18
+                if(a+b==c){
+19
+                    if(q=='='){
+20
+                    System.out.println("Yes");
+21
+                }
+22
+                }else{
+23
+                    System.out.println(a+b);
+24
+                }
+25
+            }
+26
+            else if(ch=='*'){
+27
+                if(a*b==c){
+28
+                    if(q=='='){
+29
+                    System.out.println("Yes");
+30
+                }
+31
+                }else{
+32
+                   System.out.println(a*b) ;
+33
+                }
+34
+            }
+35
+            else if(ch=='-'){
+36
+                if(a-b==c){
+37
+                    if(q=='='){
+38
+                        System.out.println("Yes");
+39
+                    }
+40
+                }else{
+41
+                    System.out.println(a-b);
+42
+                }
+43
+            }
+44
+            i++;
+45
+        }
+46
+    }
+47
+}
