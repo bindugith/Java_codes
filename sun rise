@@ -1,0 +1,20 @@
+import java.util.*;
+class sun_Rises{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int count=1;
+int a[]=new int[n];
+for(int i=0;i<n;i++){
+a[i]=s.nextInt();
+}
+int lar=a[0];
+for(int i=1;i<n;i++){
+if(lar<a[i]){
+lar=a[i];
+count++;
+}
+}
+System.out.println(count);
+}
+}
