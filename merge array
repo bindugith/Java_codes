@@ -1,0 +1,43 @@
+import java.util.*;
+class merge_Array{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int m=s.nextInt();
+int a[]=new int[n];
+int b[]=new int[m];
+int c[]=new int[n+m];
+for(int i=0;i<n;i++){
+a[i]=s.nextInt();
+}
+for(int i=0;i<m;i++){
+b[i]=s.nextInt();
+}
+int i=0,j=0,l=0;
+while(i<n && j<m){
+if(a[i]<b[j]){
+c[l]=a[i];
+i++;
+l++;
+}
+else {
+c[l]=b[j];
+j++;
+l++;
+}
+}
+while(i<n){
+c[l]=a[i];
+i++;
+l++;
+}
+while(j<m){
+c[l]=b[j];
+j++;
+l++;
+}
+for(int r=0;r<l;r++){
+System.out.print(c[r]);
+}
+}
+}
