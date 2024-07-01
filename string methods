@@ -1,0 +1,11 @@
+import java.util.*;
+class string4{
+public static void main(String[] args){
+String str="satish software solutions";
+System.out.println(str);
+System.out.println(str.replace('s','S'));
+System.out.println(str.charAt(7));
+System.out.println(str.indexOf("i"));
+System.out.println(str.lastIndexOf("i"));
+}
+}
