@@ -1,0 +1,14 @@
+import java.util.*;
+class string6{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str1=s.next();
+String str2=s.next();
+if(str1.equalsIgnoreCase(str2)){
+System.out.print("Same");
+}
+else{
+System.out.print("Not same");
+}
+}
+}
