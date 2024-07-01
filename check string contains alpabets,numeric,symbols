@@ -1,0 +1,23 @@
+import java.util.*;
+class string14{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+char c=s.next().charAt(0);
+if(Character.isLetterOrDigit(c)){
+System.out.println("alpha-numeric");
+if(Character.isLetter(c)){
+System.out.println("alphabet");
+if(Character.isUpperCase(c)){
+System.out.println("Upper case");
+}else{
+System.out.println("lower case");
+}
+}else{
+System.out.println("Digit");
+}
+}
+else{
+System.out.println("symbol");
+}
+}
+}
