@@ -1,0 +1,14 @@
+import java.util.*;
+class string5{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.nextLine();
+String str1=s.nextLine();
+if(str.equals(str1)){
+System.out.print("Same");
+}
+else{
+System.out.print("not same");
+}
+}
+}
