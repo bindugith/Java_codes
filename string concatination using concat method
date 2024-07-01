@@ -1,0 +1,9 @@
+import java.util.*;
+class string13{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str1=s.next();
+String str2=str1.concat("phython");
+System.out.println(str2);
+}
+}
