@@ -1,0 +1,10 @@
+import java.util.*;
+class string8{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.next();
+String str2=s.next();
+int r=str.compareTo(str2);
+System.out.print(r);
+}
+}
