@@ -1,0 +1,13 @@
+import java.util.*;
+class string3{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.next();
+char str2[]=str.toCharArray();
+System.out.println(str);
+System.out.println(Arrays.toString(str2));
+for(int i=0;i<str2.length;i++){
+System.out.println(str2[i]);
+}
+}
+}
