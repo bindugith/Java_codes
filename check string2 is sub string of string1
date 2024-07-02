@@ -1,0 +1,13 @@
+import java.util.*;
+class string17{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.nextLine();
+String str1=s.nextLine();
+if(str.contains(str1)){
+System.out.print(" Second string is substring");
+}else{
+System.out.print("second string is not substring");
+}
+}
+}
