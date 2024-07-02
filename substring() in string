@@ -1,0 +1,8 @@
+mport java.util.*;
+class string18{
+public static void main(String[] args){
+String str="Java is simple and robust language";
+System.out.println(str.substring(4));
+System.out.println(str.substring(6,15));
+}
+}
