@@ -1,0 +1,15 @@
+import java.util.*;
+class string20{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.nextLine();
+int max=0;
+String res[]=str.split(" ");
+for(int i=0;i<res.length;i++){
+int r=res[i].length();
+if(r>max){
+max=r;
+}
+}
+System.out.println(max);
+}}
