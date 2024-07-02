@@ -1,0 +1,24 @@
+import java.util.*;
+class string15{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.nextLine();
+int alpha_count=0,upper_count=0,lower_count=0,digit_count=0,symbol_count=0;
+for(int i=0;i<str.length();i++){
+if(Character.isLetter(str.charAt(i))){
+alpha_count++;
+if(Character.isUpperCase(str.charAt(i))){
+upper_count++;
+}else{
+lower_count++;
+}
+}else if(Character.isDigit(str.charAt(i))){
+digit_count++;
+}
+else{
+symbol_count++;
+}
+}
+System.out.println(alpha_count+" "+upper_count+" "+lower_count+" "+digit_count+" "+symbol_count);
+}
+}
