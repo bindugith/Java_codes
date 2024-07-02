@@ -1,0 +1,10 @@
+import java.util.*;
+class string19{
+public static void main(String[] args){
+String str="java is simple and robust language";
+String res[]=str.split(" ");
+System.out.println(Arrays.toString(res));
+String res1[]=str.split("and");
+System.out.println(Arrays.toString(res1));
+}
+}
