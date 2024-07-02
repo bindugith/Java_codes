@@ -1,0 +1,75 @@
+In an organization, they were playing a keyword game and they want to print the word which is ending with 's'. So help them by writing a program to print the words ending with 's'
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+Print result
+
+Sample Input 0
+
+this was mine
+Sample Output 0
+
+this
+was
+Sample Input 1
+
+kings are born at june
+Sample Output 1
+
+kings
+Sample Input 2
+
+we are programmers
+Sample Output 2
+
+programmers
+Submissions: 92
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        String str=s.nextLine();
+10
+        String res[]=str.split(" ");
+11
+        for(int i=0;i<res.length;i++){
+12
+            if(res[i].endsWith("s")){
+13
+                System.out.println(res[i]);
+14
+            }
+15
+        }
+16
+    }
+17
+}
