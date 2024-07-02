@@ -1,0 +1,90 @@
+A group of people are playing a game based on vowels. If a person among them says a word or sentence others should tell the word immediately. Where while telling the word they just want to replace each vowel with the next immediate vowel lexicographical order i.e. 'a’ will be replaced by ‘e’, ‘e’ will be replaced by ‘i’, ‘i’ will be replaced by ‘o’, ‘o’ will be replaced by ‘u’, ‘u’ will be replaced by ‘a’. The person who says the word first with the mentioned changes is the winner of the game. Sonu is failing all the time. He is good in English but he couldn't do it properly for a lengthy sentence. Help him to win the game by writing a program implementing the same.
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+print output
+
+Sample Input 0
+
+I am a legend
+Sample Output 0
+
+I em e ligind
+Submissions: 117
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        String str=s.nextLine();
+10
+        char str1[]=str.toCharArray();
+11
+        for(int i=0;i<str1.length;i++){
+12
+            if(str1[i]=='a'||str1[i]=='e'||str1[i]=='i'||str1[i]=='o'||str1[i]=='u'){
+13
+                    if(str1[i]=='a'){
+14
+                        str1[i]='e';
+15
+                    }else if(str1[i]=='e'){
+16
+                        str1[i]='i';
+17
+                    }else if(str1[i]=='i'){
+18
+                        str1[i]='o';
+19
+                    }
+20
+                else if(str1[i]=='o'){
+21
+                    str1[i]='u';
+22
+                }else if(str1[i]=='u'){
+23
+                        str1[i]='a';
+24
+                    }
+25
+                }
+26
+        }
+27
+        for(int i=0;i<str1.length;i++){
+28
+            System.out.print(str1[i]);
+29
+        }
+30
+    }
+31
+}
