@@ -1,0 +1,11 @@
+import java.util.*;
+class string16{
+public static void main(String[] args){
+String str="java is simple language";
+System.out.println(str.contains("simple"));
+System.out.println(str.contains("phython"));
+System.out.println(str.startsWith("j"));
+System.out.println(str.endsWith("age"));
+System.out.println(str.startsWith("k"));
+}
+}
