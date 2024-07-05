@@ -1,0 +1,23 @@
+import java.util.*;
+class subSequence{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str=s.next();
+String str1=s.next();
+String k="";
+int i=0;
+int j=0;
+while(i<str.length() && j<str1.length()){
+if(str.charAt(i)==str1.charAt(j)){
+k=k+str.charAt(i);
+i++;
+}
+j++;
+}
+if(str.equals(k)){
+System.out.print("true");
+}else{
+System.out.print("false");
+}
+}
+}
