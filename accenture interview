@@ -1,0 +1,30 @@
+import java.util.*;
+class Accenture{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int m=s.nextInt();
+int i=0;
+int max,min;
+int max_sum=0,min_sum=0;
+while(i<m){
+int a=s.nextInt();
+max=0;
+min=9;
+while(a>0){
+int n=a%10;
+if(max<n){
+max=n;
+}
+if(min>n){
+min=n;
+}
+a=a/10;
+}
+max_sum=max_sum+max;
+min_sum=min_sum+min;
+i++;
+}
+System.out.print(max_sum-min_sum);
+}
+}
+
