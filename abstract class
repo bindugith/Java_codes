@@ -1,0 +1,22 @@
+abstract class First{
+void m1(){
+System.out.println("method in 1st class");
+}
+public abstract void m2();
+}
+class Second extends First{
+void m3(){
+System.out.println("method in 2nd class");
+}
+public void m2(){
+System.out.println("method is abstract");
+}
+}
+class abstract1{
+public static void main(String[] args){
+Second s=new Second();
+s.m1();
+s.m2();
+s.m3();
+} 
+}
