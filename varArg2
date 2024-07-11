@@ -1,0 +1,13 @@
+import java.util.*;
+class varArg{
+void show(int...a){
+System.out.println(" var-arg method"+Arrays.toString(a));
+}
+public static void main(String[] args){
+varArg v=new varArg();
+v.show(11,23,55);
+v.show(22,41);
+v.show(23,46,58,97,12);
+v.show();
+}
+}
