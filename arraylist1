@@ -1,0 +1,30 @@
+import java.util.*;
+class arrayList{
+    public static void main(String[] args){
+        ArrayList<Integer> arr=new ArrayList<>();
+        ArrayList<Integer> arr1=new ArrayList<>();
+        arr.add(5);
+        arr.add(7);
+        arr.add(1);
+        arr.add(10);
+        arr.add(1,8);
+        arr1.add(15);
+        arr1.add(31);
+        arr1.add(30);
+        arr.add(5);
+        for(int i=0;i<arr.size();i++){
+            System.out.print(arr.get(i)+" ");
+        }
+        System.out.println(arr.contains(19));
+        System.out.println(arr.indexOf(7));
+        System.out.println(arr.isEmpty());
+        System.out.println(arr.indexOf(5));
+        System.out.println(arr.lastIndexOf(5));
+        arr1.remove()
+        for(int i=0;i<arr1.size();i++){
+            System.out.print(arr1.get(i)+" ");
+        }
+
+        
+    }
+}
