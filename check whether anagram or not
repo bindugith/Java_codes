@@ -1,0 +1,30 @@
+import java.util.*;
+class Anagram{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+String str1=s.next();
+String str2=s.next();
+char[] arr1=str1.toCharArray();
+char[] arr2=str2.toCharArray();
+int n=arr1.length;
+int m=arr2.length;
+int flag=0;
+if(n==m){
+Arrays.sort(arr1);
+Arrays.sort(arr2);
+for(int i=0;i<n;i++){
+if(arr1[i]!=arr2[i]){
+flag++;
+System.out.print(" not a anagram");
+break;
+}
+}
+if(flag==0){
+System.out.print("anagram");
+}
+}
+else{
+System.out.print("not a anagram");
+}
+}
+}
